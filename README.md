@@ -1,8 +1,10 @@
 # vue-study-ts
 
-@vueuse/core:
+lodash:
+lodash-es:
+
 官网：
-https://vueuse.pages.dev/guide/
+https://www.lodashjs.com/
 
 博客：
 https://blog.csdn.net/2301_80826038/article/details/142208970

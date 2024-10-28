@@ -1,44 +1,25 @@
 <template>
   <div>
-    <h1>VueUse Core Example</h1>
-    <div>
-      <h2>Window Size</h2>
-      <p>Width: {{ width }}</p>
-      <p>Height: {{ height }}</p>
-    </div>
-    <div>
-      <h2>Mouse Position</h2>
-      <p>X: {{ x }}</p>
-      <p>Y: {{ y }}</p>
-    </div>
-    <div>
-      <h2>Page Title</h2>
-      <input v-model="title" placeholder="Enter page title" />
-    </div>
-    <div>
-      <h2>Local Storage</h2>
-      <input v-model="storedValue" placeholder="Enter something to store" />
-      <p>Stored Value: {{ storedValue }}</p>
-    </div>
+    <h2>hello lodash-es</h2>
   </div>
 </template>
 
 <script setup lang="ts">
-import {ref,watch} from "vue"
-import { useWindowSize, useMouse, useTitle, useStorage } from '@vueuse/core'
+import { clone,shuffle, cloneDeep, throttle, debounce } from 'lodash-es'
 
-//获取窗口尺寸大小
-const {width,height} =useWindowSize()
+//浅拷贝 clone
+var objects = [{ 'a': 1 }, { 'b': 2 }];
+ 
+const shallow = clone(objects);
+console.log(shallow[0] === objects[0]);
+// => true
 
-//获取鼠标位置
-const {x,y} =useMouse()
 
-//动态设置页面标题
-const title=ref('VueUse Example')
-useTitle(title)
+var objects = [{ 'a': 1 }, { 'b': 2 }];
+const deep = cloneDeep(objects);
+console.log(deep[0] === objects[0]); // false
 
-//使用localStorage存储数据
-const storedValue=useStorage('my-storage-key','')
+
 
 
 

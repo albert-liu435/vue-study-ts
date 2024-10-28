@@ -1,9 +1,12 @@
-// import "./assets/main.css";
-
-import "./index.css";
 import { createApp } from "vue";
-// import App from "./AppVueUseCore.vue";
-// import App from "./App.vue";
-import App from "./App2.vue";
+// import 'element-plus/dist/index.css'
+import "virtual:svg-icons-register";
+import "./style/style.css";
+import "./style/index.css";
+import "virtual:uno.css";
+import App from "./App.vue";
+import router from "./router";
 
-createApp(App).mount("#app");
+const app = createApp(App);
+app.use(router);
+app.mount("#app");

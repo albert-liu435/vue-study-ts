@@ -1,15 +1,10 @@
 # vue-study-ts
 
-lodash:
-lodash-es:
+vite config:
+https://cn.vite.dev/config/
+https://vite.dev/config/
 
-官网：
-https://www.lodashjs.com/
-
-博客：
-https://blog.csdn.net/2301_80826038/article/details/142208970
-https://blog.csdn.net/qq_35496811/article/details/138865233
-https://blog.51cto.com/u_15715491/11396501
+项目地址：https://gitee.com/wealth123/vue-vite
 
 ## Project Setup
 

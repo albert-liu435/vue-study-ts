@@ -1,15 +1,14 @@
 # vue-study-ts
 
-lodash:
-lodash-es:
+pinia:
+https://pinia.vuejs.org/zh/core-concepts/
 
-官网：
-https://www.lodashjs.com/
-
-博客：
-https://blog.csdn.net/2301_80826038/article/details/142208970
-https://blog.csdn.net/qq_35496811/article/details/138865233
-https://blog.51cto.com/u_15715491/11396501
+blog:
+https://blog.csdn.net/hetlm/article/details/136324651
+https://blog.csdn.net/FRC16669/article/details/139581398
+https://www.cnblogs.com/qinlinkun/p/18093691
+https://www.cnblogs.com/bradenhan/articles/17285541.html
+https://blog.csdn.net/weixin_43617604/article/details/137261768
 
 ## Project Setup
 

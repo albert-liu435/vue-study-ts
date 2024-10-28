@@ -2,8 +2,14 @@
 
 import "./index.css";
 import { createApp } from "vue";
-// import App from "./AppVueUseCore.vue";
-// import App from "./App.vue";
-import App from "./App2.vue";
 
-createApp(App).mount("#app");
+import { createPinia } from "pinia";
+
+import App from "./AppRefs.vue";
+
+const app = createApp(App);
+const pinia = createPinia();
+
+// 将pinia实例挂载到app对象中
+app.use(pinia);
+app.mount("#app");

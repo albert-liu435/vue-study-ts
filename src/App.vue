@@ -1,60 +1,44 @@
+import { useDemoStore } from './store/index';
 <template>
-  <div>
-    <h1>VueUse Core Example</h1>
-    <div>
-      <h2>Window Size</h2>
-      <p>Width: {{ width }}</p>
-      <p>Height: {{ height }}</p>
-    </div>
-    <div>
-      <h2>Mouse Position</h2>
-      <p>X: {{ x }}</p>
-      <p>Y: {{ y }}</p>
-    </div>
-    <div>
-      <h2>Page Title</h2>
-      <input v-model="title" placeholder="Enter page title" />
-    </div>
-    <div>
-      <h2>Local Storage</h2>
-      <input v-model="storedValue" placeholder="Enter something to store" />
-      <p>Stored Value: {{ storedValue }}</p>
-    </div>
+<div>
+    {{ demoStore.demoid }}
+    <button @click="add"></button>
   </div>
 </template>
 
 <script setup lang="ts">
-import {ref,watch} from "vue"
-import { useWindowSize, useMouse, useTitle, useStorage } from '@vueuse/core'
-
-//获取窗口尺寸大小
-const {width,height} =useWindowSize()
-
-//获取鼠标位置
-const {x,y} =useMouse()
-
-//动态设置页面标题
-const title=ref('VueUse Example')
-useTitle(title)
-
-//使用localStorage存储数据
-const storedValue=useStorage('my-storage-key','')
+//引入仓库
+import {useDemoStore} from "./store"
+//拿到数据
+const demoStore=useDemoStore();
+console.log("ssss"+demoStore.demoid)
 
 
+
+function add(){
+//处理修改数据
+	//第一种方式：直接修改
+	demoStore.demoid =7
+	
+	//第二种方式：批量修改
+	// demoStore.$patch({
+	//      demoid：7，
+	//    })
+  demoStore.$patch({ demoid: demoStore.demoid + 1 })
+	   
+	/**
+	*第三种方式：借助`action`修改（`action`中可以编写一些业务逻辑）
+	*组件中调用`action`即可
+	*当一个方法被重复调用时，推荐使用第三种方法
+	*/
+	// demoStore.add(7)
+	// console.log('222',demoStore.demoid)
+}
 
 
 </script>
 
-<!-- <style lang="scss" scoped> -->
-<style scoped>
-body {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-div {
-  padding: 20px;
-}
+<style lang="scss" scoped>
+
 
 </style>

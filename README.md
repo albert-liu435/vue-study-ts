@@ -1,18 +1,13 @@
 # vue-study-ts
 
-This template should help get you started developing with Vue 3 in Vite.
+@vueuse/core:
+官网：
+https://vueuse.pages.dev/guide/
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+博客：
+https://blog.csdn.net/2301_80826038/article/details/142208970
+https://blog.csdn.net/qq_35496811/article/details/138865233
+https://blog.51cto.com/u_15715491/11396501
 
 ## Project Setup
 

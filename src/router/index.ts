@@ -10,6 +10,12 @@ const CommonRoutes: Array<RouteRecordRaw> = [
     component: () => import("@/view/Home.vue"),
     // component: Home,
   },
+	{
+    path: "/button",
+    name: "button",
+    component: () => import("@/view/Button.vue"),
+    // component: Home,
+  },
   {
     path: "/about",
     name: "about",

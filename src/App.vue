@@ -3,6 +3,7 @@
     <hr>
       <!-- router-link组件 -->
       <router-link to="/">首页</router-link>
+      <router-link to="/button">Button</router-link>
       <router-link to="/about">关于我们</router-link>
       <!-- $router属性 -->
       <!-- <button @click="$router.push('/')">首页</button> -->

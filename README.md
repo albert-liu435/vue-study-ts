@@ -1,15 +1,15 @@
 # vue-study-ts
 
-lodash:
-lodash-es:
+dayjs
 
 官网：
-https://www.lodashjs.com/
+https://github.com/iamkun/dayjs/tree/dev
 
 博客：
-https://blog.csdn.net/2301_80826038/article/details/142208970
-https://blog.csdn.net/qq_35496811/article/details/138865233
-https://blog.51cto.com/u_15715491/11396501
+https://juejin.cn/post/7176909754936229948
+https://blog.csdn.net/weixin_48040732/article/details/134950709
+https://blog.csdn.net/Yajyaj123/article/details/135687333
+
 
 ## Project Setup
 

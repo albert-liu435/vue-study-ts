@@ -33,5 +33,11 @@
     //   "vite-plugin-svg-icons/client"
     // ]
   },
-  "include": ["env.d.ts", "src", "types/**/*.d.ts", "mock/**/*.ts"]
+  "include": [
+    "env.d.ts",
+    "src",
+    "src/**/*.ts",
+    "types/**/*.d.ts",
+    "mock/**/*.ts"
+  ]
 }

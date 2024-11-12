@@ -2,8 +2,14 @@
 
 import "./index.css";
 import { createApp } from "vue";
-// import App from "./AppVueUseCore.vue";
-// import App from "./App.vue";
-import App from "./App2.vue";
 
-createApp(App).mount("#app");
+//全局 引入
+import dayjs from "dayjs";
+
+import App from "./App.vue";
+
+const app = createApp(App);
+
+app.config.globalProperties.$dayjs = dayjs;
+
+app.mount("#app");
